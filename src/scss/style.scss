@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+$main: #1cabe2;
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    height: 7.5em;
+    width: 100%;
+    background: $main;
+    display: grid;
+    color: #fff;
+
+    .header-1 {
+        justify-self: end;
+        padding-top: 0.5em;
+        .active {
+            border-top: 4px solid #ffffff;
+        }
+        .margin-around {
+            margin: 0 1.7em;
+        }
+        a {
+            padding-top: 0.6em;
+            font-size: 0.75em;
+        }
+    }
+    .header-2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        .brand {
+            font-size: 2.5em;
+            display: flex;
+            p {
+                font-weight: bolder;
+                margin: 0;
+            }
+            #slogan {
+                font-weight: 500;
+                margin: 0 0.5em;
+                position: relative;
+                &::before {
+                    content: " ";
+                    position: absolute;
+                    height: 1.3em;
+                    width: 0.03em;
+                    background: #fff;
+                    top: -0.1em;
+                    left: -0.25em;
+                }
+            }
+            img {
+                width: 1em;
+                height: 1em;
+                margin: 0.1em;
+            }
+        }
+    }
+}
+.container-sm {
+    padding: 0 2em;
+}
+.justify-left {
+    justify-self: start;
+}
+.justify-right {
+    justify-self: end;
+    margin-top: 0.7em;
+}
+.btn {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 6px;
+    border: 3px solid #ffffff;
+    padding: 0.7em 1.5em;
+    font-size: 0.88em;
+    &:hover {
+        // background: ;
+    }
+}
