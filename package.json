@@ -1,0 +1,47 @@
+{
+    "name": "unicef_client",
+    "version": "1.0.0",
+    "description": "petition for unicef",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "webpack-dev-server --mode development --open",
+        "build": "webpack",
+        "lint": "eslint ./"
+    },
+    "main": "index.js",
+    "repository": "https://github.com/xbaysal11/unicef_client",
+    "license": "MIT",
+    "devDependencies": {
+        "@babel/core": "^7.4.4",
+        "@babel/preset-env": "^7.4.4",
+        "babel-loader": "^8.0.6",
+        "css-loader": "^2.1.1",
+        "eslint": "^5.16.0",
+        "eslint-config-prettier": "^4.3.0",
+        "eslint-loader": "^2.1.2",
+        "eslint-plugin-prettier": "^3.1.0",
+        "file-loader": "^3.0.1",
+        "html-loader": "^0.5.5",
+        "html-webpack-plugin": "^3.2.0",
+        "husky": "^2.3.0",
+        "mini-css-extract-plugin": "^0.6.0",
+        "node-sass": "^4.12.0",
+        "prettier": "^1.17.1",
+        "sass-loader": "^7.1.0",
+        "style-loader": "^0.23.1",
+        "webpack": "^4.31.0",
+        "webpack-cli": "^3.3.2",
+        "webpack-dev-server": "^3.3.1"
+    },
+    "dependencies": {
+        "clean-webpack-plugin": "^2.0.2"
+    },
+    "prettier": {
+        "tabWidth": 4
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "yarn lint"
+        }
+    }
+}
