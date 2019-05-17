@@ -1,28 +1,38 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
-$main: #1cabe2;
+
+$blue: #1cabe2;
+$blue-light: #59bae0;
+$bg-gray: #f1f1f1;
+$font: #303030;
+$white: #fff;
+%shadow {
+    -webkit-box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.25);
+}
 
 a {
-    color: #fff;
+    color: $white;
     text-decoration: none;
 }
 
 body {
     font-family: "Roboto", sans-serif;
+    color: $font;
     margin: 0;
     padding: 0;
 }
 header {
     height: 7.5em;
     width: 100%;
-    background: $main;
+    background: $blue;
     display: grid;
-    color: #fff;
+    color: $white;
 
     .header-1 {
         justify-self: end;
         padding-top: 0.5em;
         .active {
-            border-top: 4px solid #ffffff;
+            border-top: 4px solid $white;
         }
         .margin-around {
             margin: 0 1.7em;
@@ -51,7 +61,7 @@ header {
                     position: absolute;
                     height: 1.3em;
                     width: 0.03em;
-                    background: #fff;
+                    background: $white;
                     top: -0.1em;
                     left: -0.25em;
                 }
@@ -67,6 +77,12 @@ header {
 .container-sm {
     padding: 0 2em;
 }
+.container-md {
+    padding: 0 15.5em;
+}
+.container-lg {
+    padding: 0 25em;
+}
 .justify-left {
     justify-self: start;
 }
@@ -79,10 +95,52 @@ header {
     font-weight: bold;
     text-align: center;
     border-radius: 6px;
-    border: 3px solid #ffffff;
+    border: 3px solid $white;
     padding: 0.7em 1.5em;
     font-size: 0.88em;
     &:hover {
-        // background: ;
+        background: $blue-light;
+    }
+}
+main {
+    .banner {
+        position: relative;
+        padding-bottom: 7.1em;
+        img {
+            width: 100%;
+            height: auto;
+        }
+        .title {
+            @extend %shadow;
+            position: absolute;
+            z-index: 2;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background: $white;
+            display: grid;
+            align-items: center;
+            width: 85%;
+            margin: 0 auto 2.1em auto;
+            padding: 1.3em;
+            border-radius: 1em;
+            text-align: center;
+            .main-title {
+                font-weight: 700;
+                font-size: 2.625em;
+                margin-bottom: 0.8em;
+            }
+            .secondary-title {
+                font-style: italic;
+                font-size: 1.25em;
+            }
+        }
+    }
+    .description {
+        padding: 3.5em 0;
+        text-align: center;
+        p {
+            font-size: 1.25em;
+        }
     }
 }
