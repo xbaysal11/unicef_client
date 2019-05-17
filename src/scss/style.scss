@@ -62,6 +62,13 @@ header {
     .header-2 {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        .btn {
+            @extend %btn;
+            border-radius: 6px;
+            border: 3px solid $white;
+            padding-left: 1.5em;
+            padding-right: 1.5em;
+        }
         .brand {
             font-size: 2.5em;
             display: flex;
@@ -91,27 +98,7 @@ header {
         }
     }
 }
-.container-sm {
-    padding: 0 2em;
-}
-.container-md {
-    padding: 0 15.5em;
-}
-.justify-left {
-    justify-self: start;
-}
-.justify-right {
-    justify-self: end;
-    margin-top: 0.7em;
-}
 
-.btn {
-    @extend %btn;
-    border-radius: 6px;
-    border: 3px solid $white;
-    padding-left: 1.5em;
-    padding-right: 1.5em;
-}
 main {
     .banner {
         position: relative;
@@ -239,5 +226,51 @@ main {
                 }
             }
         }
+        .video-section {
+        }
+    }
+}
+.container-sm {
+    padding: 0 2em;
+}
+.container-md {
+    padding: 0 15.5em;
+}
+@media only screen and (max-width: 1200px) {
+    .container-md {
+        padding: 0 3em;
+    }
+}
+.justify-left {
+    justify-self: start;
+}
+.justify-right {
+    justify-self: end;
+    margin-top: 0.7em;
+}
+.section-title {
+    text-align: center;
+    margin-top: 3em;
+    h1 {
+        margin: 0;
+    }
+}
+.section-description {
+    // width:
+    text-align: center;
+    margin-bottom: 2em;
+    border-bottom: 2px solid $blue;
+    padding: 1em 1.5em;
+}
+.btn-wrapper {
+    margin: 3em auto;
+    text-align: center;
+    width: 100%;
+    .btn-sign {
+        @extend %btn;
+        margin: 3em 0 3em 0;
+        padding-left: 30%;
+        padding-right: 30%;
+        border-radius: 0.7em;
     }
 }
