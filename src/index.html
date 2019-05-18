@@ -1,439 +1,459 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title></title>
-        <script src="https://unpkg.com/lodash@4.16.6"></script>
-    </head>
-    <body>
-        <!-- header -->
-        <header>
-            <div class="container-sm header-1 ">
-                <a class="active" href="#">English</a>
-                <a class="margin-around" href="#">Русский</a>
-                <a class="" href="#">Кыргызча</a>
+
+<head>
+    <title>Sign the Petition</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./img/unicef-blue.png" />
+    <script src="https://unpkg.com/lodash@4.16.6"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="container-sm header-1 ">
+            <a class="active" href="#">English</a>
+            <a class="margin-around" href="#">Русский</a>
+            <a class="" href="#">Кыргызча</a>
+        </div>
+        <div class=" container-sm header-2">
+            <div class="justify-left ">
+                <div class="brand">
+                    <p>unicef</p>
+                    <img src="./img/unicef.png" alt="" />
+                    <p id="slogan">for every child</p>
+                </div>
             </div>
-            <div class=" container-sm header-2">
-                <div class="justify-left ">
-                    <div class="brand">
-                        <p>unicef</p>
-                        <img src="./img/unicef.png" alt="" />
-                        <p id="slogan">for every child</p>
+            <div class="justify-right">
+                <a class="btn" href="#">GO TO UNICEF.ORG</a>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+    <!-- main -->
+    <main>
+        <div class="banner">
+            <img src="./img/banner.jpg" alt="" />
+            <div class="title">
+                <div class="main-title">
+                    <!-- <h1> -->
+                    Join us on World Children’s Day – 20 November
+                    <!-- </h1> -->
+                </div>
+                <div class="secondary-title">
+                    Children are taking over and turning the world blue.
+                    Sign the petition.
+                </div>
+            </div>
+        </div>
+        <div class="container-md">
+            <div class="description ">
+                <p>
+                    Children have their rights denied every single day. We
+                    want to build a world where every child is in school and
+                    learning, safe from harm and able to fulfill their
+                    potential, and we know you do too. It's time to put
+                    children back on the agenda.
+                </p>
+                <p>
+                    Sign the petition and #GoBlue to call on world leaders
+                    to commit to fulfilling the rights of every child and
+                    acknowledge that these rights are non-negotiable.
+                </p>
+            </div>
+        </div>
+        <div class="petition-outer">
+            <div>
+                <div class="petition-inner">
+                    <div class="petition-title">
+                        <h1>
+                            SIGN THE PETITION FOR EVERY CHILD TO HAVE EVERY
+                            RIGHT
+                        </h1>
                     </div>
-                </div>
-                <div class="justify-right">
-                    <a class="btn" href="#">GO TO UNICEF.ORG</a>
-                </div>
-            </div>
-        </header>
-        <!-- header end -->
-        <!-- main -->
-        <main>
-            <div class="banner">
-                <img src="./img/banner.jpg" alt="" />
-                <div class="title">
-                    <div class="main-title">
-                        <!-- <h1> -->
-                        Join us on World Children’s Day – 20 November
-                        <!-- </h1> -->
+                    <div class="petition-description">
+                        <h1>
+                            Yes, I want leaders to act now to fulfill every
+                            right, for every child.
+                        </h1>
                     </div>
-                    <div class="secondary-title">
-                        Children are taking over and turning the world blue.
-                        Sign the petition.
-                    </div>
-                </div>
-            </div>
-            <div class="container-md">
-                <div class="description ">
-                    <p>
-                        Children have their rights denied every single day. We
-                        want to build a world where every child is in school and
-                        learning, safe from harm and able to fulfill their
-                        potential, and we know you do too. It's time to put
-                        children back on the agenda.
-                    </p>
-                    <p>
-                        Sign the petition and #GoBlue to call on world leaders
-                        to commit to fulfilling the rights of every child and
-                        acknowledge that these rights are non-negotiable.
-                    </p>
-                </div>
-            </div>
-            <div class="petition-outer">
-                <div>
-                    <div class="petition-inner">
-                        <div class="petition-title">
-                            <h1>
-                                SIGN THE PETITION FOR EVERY CHILD TO HAVE EVERY
-                                RIGHT
-                            </h1>
+                    <div class="graph">
+                        <p id="submitted">5 000 000 people submitted!</p>
+                        <p id="goal">Goal: 7 000 000 submission...</p>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar"></div>
                         </div>
-                        <div class="petition-description">
-                            <h1>
-                                Yes, I want leaders to act now to fulfill every
-                                right, for every child.
-                            </h1>
-                        </div>
-                        <div class="graph">
-                            <p id="submitted">5 000 000 people submitted!</p>
-                            <p id="goal">Goal: 7 000 000 submission...</p>
-                            <div class="progress-bar-container">
-                                <div class="progress-bar"></div>
-                            </div>
-                        </div>
-                        <form class="form">
-                            <div class="row">
-                                <div class="col">
-                                    <label for="firstname">NAME</label
-                                    ><input
-                                        class="input"
-                                        type="text"
-                                        id="firstname"
-                                        name="firstname"
-                                        required="required"
-                                    />
-                                </div>
-                                <div class="col">
-                                    <label for="firstname">SURNAME</label
-                                    ><input
-                                        class="input"
-                                        type="text"
-                                        id="firstname"
-                                        name="firstname"
-                                        required="required"
-                                    />
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <label for="firstname">EMAIL</label
-                                    ><input
-                                        class="input"
-                                        type="email"
-                                        id="firstname"
-                                        name="firstname"
-                                        required="required"
-                                    />
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col  ">
-                                    <label for="country">COUNTRY</label
-                                    ><select
-                                        id="country"
-                                        name="country"
-                                        required="required"
-                                        class="select"
-                                        ><option value=""></option>
-                                        <option value="AF"> Afghanistan </option
-                                        ><option value="AL"> Albania </option
-                                        ><option value="DZ"> Algeria </option
-                                        ><option value="AD"> Andorra </option
-                                        ><option value="AO"> Angola </option
-                                        ><option value="AG">
-                                            Antigua and Barbuda </option
-                                        ><option value="AR"> Argentina </option
-                                        ><option value="AI"> Anguilla </option
-                                        ><option value="AM"> Armenia </option
-                                        ><option value="AU"> Australia </option
-                                        ><option value="AT"> Austria </option
-                                        ><option value="AZ"> Azerbaijan </option
-                                        ><option value="BS"> Bahamas </option
-                                        ><option value="BH"> Bahrain </option
-                                        ><option value="BD"> Bangladesh </option
-                                        ><option value="BB"> Barbados </option
-                                        ><option value="BY"> Belarus </option
-                                        ><option value="BE"> Belgium </option
-                                        ><option value="BZ"> Belize </option
-                                        ><option value="BJ"> Benin </option
-                                        ><option value="BT"> Bhutan </option
-                                        ><option value="BO">
-                                            Bolivia (Plurinational State of) </option
-                                        ><option value="BA">
-                                            Bosnia and Herzegovina </option
-                                        ><option value="BW"> Botswana </option
-                                        ><option value="BR"> Brazil </option
-                                        ><option value="BN">
-                                            Brunei Darussalam </option
-                                        ><option value="VG">
-                                            British Virgin Islands </option
-                                        ><option value="BG"> Bulgaria </option
-                                        ><option value="BF">
-                                            Burkina Faso </option
-                                        ><option value="BI"> Burundi </option
-                                        ><option value="KH"> Cabo Verde </option
-                                        ><option value="CM"> Cambodia </option
-                                        ><option value="CA"> Cameroon </option
-                                        ><option value="CV"> Canada </option
-                                        ><option value="CF">
-                                            Central African Republic </option
-                                        ><option value="TD"> Chad </option
-                                        ><option value="CL"> Chile </option
-                                        ><option value="CN"> China </option
-                                        ><option value="CO"> Colombia </option
-                                        ><option value="KM"> Comoros </option
-                                        ><option value="CG"> Congo </option
-                                        ><option value="CD">
-                                            Democratic Republic of the Congo </option
-                                        ><option value="CK">
-                                            Cook Islands (New Zealand) </option
-                                        ><option value="CR"> Costa Rica </option
-                                        ><option value="CI">
-                                            Côte d'Ivoire </option
-                                        ><option value="HR"> Croatia </option
-                                        ><option value="CU"> Cuba </option
-                                        ><option value="CY"> Cyprus </option
-                                        ><option value="CZ"> Czechia </option
-                                        ><option value="DK"> Denmark </option
-                                        ><option value="DJ"> Djibouti </option
-                                        ><option value="DM"> Dominica </option
-                                        ><option value="DO">
-                                            Dominican Republic </option
-                                        ><option value="EC"> Ecuador </option
-                                        ><option value="EG"> Egypt </option
-                                        ><option value="SV">
-                                            El Salvador </option
-                                        ><option value="GQ">
-                                            Equatorial Guinea </option
-                                        ><option value="ER"> Eritrea </option
-                                        ><option value="EE"> Estonia </option
-                                        ><option value="ET"> Ethiopia </option
-                                        ><option value="FJ"> Fiji </option
-                                        ><option value="FI"> Finland </option
-                                        ><option value="FR"> France </option
-                                        ><option value="GA"> Gabon </option
-                                        ><option value="GM"> Gambia </option
-                                        ><option value="GE"> Georgia </option
-                                        ><option value="DE"> Germany </option
-                                        ><option value="GH"> Ghana </option
-                                        ><option value="GR"> Greece </option
-                                        ><option value="GD"> Grenada </option
-                                        ><option value="GT"> Guatemala </option
-                                        ><option value="GN"> Guinea </option
-                                        ><option value="GW">
-                                            Guinea-Bissau </option
-                                        ><option value="GY"> Guyana </option
-                                        ><option value="HT"> Haiti </option
-                                        ><option value="HN"> Honduras </option
-                                        ><option value="HK">
-                                            Hong Kong, China </option
-                                        ><option value="HU"> Hungary </option
-                                        ><option value="IS"> Iceland </option
-                                        ><option value="IN"> India </option
-                                        ><option value="ID"> Indonesia </option
-                                        ><option value="IR">
-                                            Iran (Islamic Republic of) </option
-                                        ><option value="IQ"> Iraq </option
-                                        ><option value="IE"> Ireland </option
-                                        ><option value="IL"> Israel </option
-                                        ><option value="IT"> Italy </option
-                                        ><option value="JM"> Jamaica </option
-                                        ><option value="JP"> Japan </option
-                                        ><option value="JO"> Jordan </option
-                                        ><option value="KZ"> Kazakhstan </option
-                                        ><option value="KE"> Kenya </option
-                                        ><option value="KI"> Kiribati </option
-                                        ><option value="KP">
-                                            Democratic People’s Republic of
-                                            Korea </option
-                                        ><option value="KR">
-                                            Republic of Korea </option
-                                        ><option value="XK">
-                                            Kosovo (under UNSCR 1244) </option
-                                        ><option value="KW"> Kuwait </option
-                                        ><option value="KG"> Kyrgyzstan </option
-                                        ><option value="LA">
-                                            Lao People’s Democratic Republic </option
-                                        ><option value="LB"> Lebanon </option
-                                        ><option value="LS"> Lesotho </option
-                                        ><option value="LR"> Liberia </option
-                                        ><option value="LY"> Libya </option
-                                        ><option value="LI">
-                                            Liechtenstein </option
-                                        ><option value="LT"> Lithuania </option
-                                        ><option value="LU"> Luxembourg </option
-                                        ><option value="MG"> Madagascar </option
-                                        ><option value="MK"> Malawi </option
-                                        ><option value="MW"> Malaysia </option
-                                        ><option value="MY"> Maldives </option
-                                        ><option value="MV"> Mali </option
-                                        ><option value="MT"> Malta </option
-                                        ><option value="ML">
-                                            Marshall Islands </option
-                                        ><option value="MH"> Mauritania </option
-                                        ><option value="MT"> Mauritius </option
-                                        ><option value="MR"> Mexico </option
-                                        ><option value="MX">
-                                            Micronesia (Federated States of) </option
-                                        ><option value="FM"> Monaco </option
-                                        ><option value="MC">
-                                            Republic of Moldova </option
-                                        ><option value="MD"> Mongolia </option
-                                        ><option value="MN"> Montenegro </option
-                                        ><option value="ME"> Montserrat </option
-                                        ><option value="MS"> Morocco </option
-                                        ><option value="MA"> Mozambique </option
-                                        ><option value="MZ"> Myanmar </option
-                                        ><option value="MM"> Namibia </option
-                                        ><option value="NA"> Nauru </option
-                                        ><option value="NR"> Nepal </option
-                                        ><option value="NP">
-                                            Netherlands </option
-                                        ><option value="NL">
-                                            New Zealand </option
-                                        ><option value="NZ"> Nicaragua </option
-                                        ><option value="NI"> Niger </option
-                                        ><option value="NE"> Nigeria </option
-                                        ><option value="NG">
-                                            Niue (New Zealand) </option
-                                        ><option value="NU">
-                                            North Macedonia </option
-                                        ><option value="NO"> Norway </option
-                                        ><option value="OM"> Oman </option
-                                        ><option value="PK"> Pakistan </option
-                                        ><option value="PW"> Palau </option
-                                        ><option value="PA"> Panama </option
-                                        ><option value="PG">
-                                            Papua New Guinea </option
-                                        ><option value="PY"> Paraguay </option
-                                        ><option value="PE"> Peru </option
-                                        ><option value="PH">
-                                            Philippines </option
-                                        ><option value="PL"> Poland </option
-                                        ><option value="PT"> Portugal </option
-                                        ><option value="QA"> Qatar </option
-                                        ><option value="RO"> Romania </option
-                                        ><option value="RU">
-                                            Russian Federation </option
-                                        ><option value="RW"> Rwanda </option
-                                        ><option value="KN">
-                                            Saint Kitts and Nevis </option
-                                        ><option value="LC">
-                                            Saint Lucia </option
-                                        ><option value="VC">
-                                            Saint Vincent and the Grenadines </option
-                                        ><option value="WS"> Samoa </option
-                                        ><option value="WS"> San Marino </option
-                                        ><option value="ST">
-                                            Sao Tome and Principe </option
-                                        ><option value="SA">
-                                            Saudi Arabia </option
-                                        ><option value="SN"> Senegal </option
-                                        ><option value="RS"> Serbia </option
-                                        ><option value="SC"> Seychelles </option
-                                        ><option value="SL">
-                                            Sierra Leone </option
-                                        ><option value="SG"> Singapore </option
-                                        ><option value="SK"> Slovakia </option
-                                        ><option value="SI"> Slovenia </option
-                                        ><option value="SB">
-                                            Solomon Islands </option
-                                        ><option value="SO"> Somalia </option
-                                        ><option value="ZA">
-                                            South Africa </option
-                                        ><option value="SS">
-                                            South Sudan </option
-                                        ><option value="ES"> Spain </option
-                                        ><option value="LK"> Sri Lanka </option
-                                        ><option value="PS">
-                                            State of Palestine </option
-                                        ><option value="SD"> Sudan </option
-                                        ><option value="SR"> Suriname </option
-                                        ><option value="SZ"> Swaziland </option
-                                        ><option value="SE"> Sweden </option
-                                        ><option value="CH">
-                                            Switzerland </option
-                                        ><option value="SY">
-                                            Syrian Arab Republic </option
-                                        ><option value="TJ"> Tajikistan </option
-                                        ><option value="TZ">
-                                            United Republic of Tanzania </option
-                                        ><option value="TH"> Thailand </option
-                                        ><option value="TP">
-                                            Timor-Leste </option
-                                        ><option value="TG"> Togo </option
-                                        ><option value="TK"> Tokelau </option
-                                        ><option value="TO"> Tonga </option
-                                        ><option value="TT">
-                                            Trinidad and Tobago </option
-                                        ><option value="TN"> Tunisia </option
-                                        ><option value="TR"> Turkey </option
-                                        ><option value="TM">
-                                            Turkmenistan </option
-                                        ><option value="TC">
-                                            Turks and Caicos Islands </option
-                                        ><option value="TV"> Tuvalu </option
-                                        ><option value="UG"> Uganda </option
-                                        ><option value="UA"> Ukraine </option
-                                        ><option value="AE">
-                                            United Arab Emirates </option
-                                        ><option value="GB">
-                                            United Kingdom </option
-                                        ><option value="US">
-                                            United States of America </option
-                                        ><option value="UY"> Uruguay </option
-                                        ><option value="UZ"> Uzbekistan </option
-                                        ><option value="VU"> Vanuatu </option
-                                        ><option value="VE">
-                                            Venezuela (Bolivarian Republic of) </option
-                                        ><option value="VN"> Viet Nam </option
-                                        ><option value="YE"> Yemen </option
-                                        ><option value="ZM"> Zambia </option
-                                        ><option value="ZW">
-                                            Zimbabwe
-                                        </option></select
-                                    >
-                                </div>
-                            </div>
-                            <div class="form-checkbox row">
-                                <input
-                                    type="checkbox"
-                                    id="checkbox"
-                                    name="checkbox"
-                                    value="1"
-                                    true-value="1"
-                                    false-value=""
-                                />
-                                <label for="checkbox">
-                                    I would like to stay informed about UNICEF’s
-                                    work, including progress of this campaign,
-                                    fundraising appeals and other ways I can
-                                    support children.
-                                </label>
-                            </div>
-                            <button type="submit" class="btn-submit">
-                                SUBMIT
-                            </button>
-                        </form>
                     </div>
+                    <form class="form">
+                        <div class="row">
+                            <div class="col">
+                                <label for="firstname">NAME</label><input class="input" type="text" id="firstname"
+                                    name="firstname" required="required" />
+                            </div>
+                            <div class="col">
+                                <label for="firstname">SURNAME</label><input class="input" type="text" id="firstname"
+                                    name="firstname" required="required" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label for="firstname">EMAIL</label><input class="input" type="email" id="firstname"
+                                    name="firstname" required="required" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col  ">
+                                <label for="country">COUNTRY</label><select id="country" name="country"
+                                    required="required" class="select">
+                                    <option value=""></option>
+                                    <option value="AF"> Afghanistan </option>
+                                    <option value="AL"> Albania </option>
+                                    <option value="DZ"> Algeria </option>
+                                    <option value="AD"> Andorra </option>
+                                    <option value="AO"> Angola </option>
+                                    <option value="AG">
+                                        Antigua and Barbuda </option>
+                                    <option value="AR"> Argentina </option>
+                                    <option value="AI"> Anguilla </option>
+                                    <option value="AM"> Armenia </option>
+                                    <option value="AU"> Australia </option>
+                                    <option value="AT"> Austria </option>
+                                    <option value="AZ"> Azerbaijan </option>
+                                    <option value="BS"> Bahamas </option>
+                                    <option value="BH"> Bahrain </option>
+                                    <option value="BD"> Bangladesh </option>
+                                    <option value="BB"> Barbados </option>
+                                    <option value="BY"> Belarus </option>
+                                    <option value="BE"> Belgium </option>
+                                    <option value="BZ"> Belize </option>
+                                    <option value="BJ"> Benin </option>
+                                    <option value="BT"> Bhutan </option>
+                                    <option value="BO">
+                                        Bolivia (Plurinational State of) </option>
+                                    <option value="BA">
+                                        Bosnia and Herzegovina </option>
+                                    <option value="BW"> Botswana </option>
+                                    <option value="BR"> Brazil </option>
+                                    <option value="BN">
+                                        Brunei Darussalam </option>
+                                    <option value="VG">
+                                        British Virgin Islands </option>
+                                    <option value="BG"> Bulgaria </option>
+                                    <option value="BF">
+                                        Burkina Faso </option>
+                                    <option value="BI"> Burundi </option>
+                                    <option value="KH"> Cabo Verde </option>
+                                    <option value="CM"> Cambodia </option>
+                                    <option value="CA"> Cameroon </option>
+                                    <option value="CV"> Canada </option>
+                                    <option value="CF">
+                                        Central African Republic </option>
+                                    <option value="TD"> Chad </option>
+                                    <option value="CL"> Chile </option>
+                                    <option value="CN"> China </option>
+                                    <option value="CO"> Colombia </option>
+                                    <option value="KM"> Comoros </option>
+                                    <option value="CG"> Congo </option>
+                                    <option value="CD">
+                                        Democratic Republic of the Congo </option>
+                                    <option value="CK">
+                                        Cook Islands (New Zealand) </option>
+                                    <option value="CR"> Costa Rica </option>
+                                    <option value="CI">
+                                        Côte d'Ivoire </option>
+                                    <option value="HR"> Croatia </option>
+                                    <option value="CU"> Cuba </option>
+                                    <option value="CY"> Cyprus </option>
+                                    <option value="CZ"> Czechia </option>
+                                    <option value="DK"> Denmark </option>
+                                    <option value="DJ"> Djibouti </option>
+                                    <option value="DM"> Dominica </option>
+                                    <option value="DO">
+                                        Dominican Republic </option>
+                                    <option value="EC"> Ecuador </option>
+                                    <option value="EG"> Egypt </option>
+                                    <option value="SV">
+                                        El Salvador </option>
+                                    <option value="GQ">
+                                        Equatorial Guinea </option>
+                                    <option value="ER"> Eritrea </option>
+                                    <option value="EE"> Estonia </option>
+                                    <option value="ET"> Ethiopia </option>
+                                    <option value="FJ"> Fiji </option>
+                                    <option value="FI"> Finland </option>
+                                    <option value="FR"> France </option>
+                                    <option value="GA"> Gabon </option>
+                                    <option value="GM"> Gambia </option>
+                                    <option value="GE"> Georgia </option>
+                                    <option value="DE"> Germany </option>
+                                    <option value="GH"> Ghana </option>
+                                    <option value="GR"> Greece </option>
+                                    <option value="GD"> Grenada </option>
+                                    <option value="GT"> Guatemala </option>
+                                    <option value="GN"> Guinea </option>
+                                    <option value="GW">
+                                        Guinea-Bissau </option>
+                                    <option value="GY"> Guyana </option>
+                                    <option value="HT"> Haiti </option>
+                                    <option value="HN"> Honduras </option>
+                                    <option value="HK">
+                                        Hong Kong, China </option>
+                                    <option value="HU"> Hungary </option>
+                                    <option value="IS"> Iceland </option>
+                                    <option value="IN"> India </option>
+                                    <option value="ID"> Indonesia </option>
+                                    <option value="IR">
+                                        Iran (Islamic Republic of) </option>
+                                    <option value="IQ"> Iraq </option>
+                                    <option value="IE"> Ireland </option>
+                                    <option value="IL"> Israel </option>
+                                    <option value="IT"> Italy </option>
+                                    <option value="JM"> Jamaica </option>
+                                    <option value="JP"> Japan </option>
+                                    <option value="JO"> Jordan </option>
+                                    <option value="KZ"> Kazakhstan </option>
+                                    <option value="KE"> Kenya </option>
+                                    <option value="KI"> Kiribati </option>
+                                    <option value="KP">
+                                        Democratic People’s Republic of
+                                        Korea </option>
+                                    <option value="KR">
+                                        Republic of Korea </option>
+                                    <option value="XK">
+                                        Kosovo (under UNSCR 1244) </option>
+                                    <option value="KW"> Kuwait </option>
+                                    <option value="KG"> Kyrgyzstan </option>
+                                    <option value="LA">
+                                        Lao People’s Democratic Republic </option>
+                                    <option value="LB"> Lebanon </option>
+                                    <option value="LS"> Lesotho </option>
+                                    <option value="LR"> Liberia </option>
+                                    <option value="LY"> Libya </option>
+                                    <option value="LI">
+                                        Liechtenstein </option>
+                                    <option value="LT"> Lithuania </option>
+                                    <option value="LU"> Luxembourg </option>
+                                    <option value="MG"> Madagascar </option>
+                                    <option value="MK"> Malawi </option>
+                                    <option value="MW"> Malaysia </option>
+                                    <option value="MY"> Maldives </option>
+                                    <option value="MV"> Mali </option>
+                                    <option value="MT"> Malta </option>
+                                    <option value="ML">
+                                        Marshall Islands </option>
+                                    <option value="MH"> Mauritania </option>
+                                    <option value="MT"> Mauritius </option>
+                                    <option value="MR"> Mexico </option>
+                                    <option value="MX">
+                                        Micronesia (Federated States of) </option>
+                                    <option value="FM"> Monaco </option>
+                                    <option value="MC">
+                                        Republic of Moldova </option>
+                                    <option value="MD"> Mongolia </option>
+                                    <option value="MN"> Montenegro </option>
+                                    <option value="ME"> Montserrat </option>
+                                    <option value="MS"> Morocco </option>
+                                    <option value="MA"> Mozambique </option>
+                                    <option value="MZ"> Myanmar </option>
+                                    <option value="MM"> Namibia </option>
+                                    <option value="NA"> Nauru </option>
+                                    <option value="NR"> Nepal </option>
+                                    <option value="NP">
+                                        Netherlands </option>
+                                    <option value="NL">
+                                        New Zealand </option>
+                                    <option value="NZ"> Nicaragua </option>
+                                    <option value="NI"> Niger </option>
+                                    <option value="NE"> Nigeria </option>
+                                    <option value="NG">
+                                        Niue (New Zealand) </option>
+                                    <option value="NU">
+                                        North Macedonia </option>
+                                    <option value="NO"> Norway </option>
+                                    <option value="OM"> Oman </option>
+                                    <option value="PK"> Pakistan </option>
+                                    <option value="PW"> Palau </option>
+                                    <option value="PA"> Panama </option>
+                                    <option value="PG">
+                                        Papua New Guinea </option>
+                                    <option value="PY"> Paraguay </option>
+                                    <option value="PE"> Peru </option>
+                                    <option value="PH">
+                                        Philippines </option>
+                                    <option value="PL"> Poland </option>
+                                    <option value="PT"> Portugal </option>
+                                    <option value="QA"> Qatar </option>
+                                    <option value="RO"> Romania </option>
+                                    <option value="RU">
+                                        Russian Federation </option>
+                                    <option value="RW"> Rwanda </option>
+                                    <option value="KN">
+                                        Saint Kitts and Nevis </option>
+                                    <option value="LC">
+                                        Saint Lucia </option>
+                                    <option value="VC">
+                                        Saint Vincent and the Grenadines </option>
+                                    <option value="WS"> Samoa </option>
+                                    <option value="WS"> San Marino </option>
+                                    <option value="ST">
+                                        Sao Tome and Principe </option>
+                                    <option value="SA">
+                                        Saudi Arabia </option>
+                                    <option value="SN"> Senegal </option>
+                                    <option value="RS"> Serbia </option>
+                                    <option value="SC"> Seychelles </option>
+                                    <option value="SL">
+                                        Sierra Leone </option>
+                                    <option value="SG"> Singapore </option>
+                                    <option value="SK"> Slovakia </option>
+                                    <option value="SI"> Slovenia </option>
+                                    <option value="SB">
+                                        Solomon Islands </option>
+                                    <option value="SO"> Somalia </option>
+                                    <option value="ZA">
+                                        South Africa </option>
+                                    <option value="SS">
+                                        South Sudan </option>
+                                    <option value="ES"> Spain </option>
+                                    <option value="LK"> Sri Lanka </option>
+                                    <option value="PS">
+                                        State of Palestine </option>
+                                    <option value="SD"> Sudan </option>
+                                    <option value="SR"> Suriname </option>
+                                    <option value="SZ"> Swaziland </option>
+                                    <option value="SE"> Sweden </option>
+                                    <option value="CH">
+                                        Switzerland </option>
+                                    <option value="SY">
+                                        Syrian Arab Republic </option>
+                                    <option value="TJ"> Tajikistan </option>
+                                    <option value="TZ">
+                                        United Republic of Tanzania </option>
+                                    <option value="TH"> Thailand </option>
+                                    <option value="TP">
+                                        Timor-Leste </option>
+                                    <option value="TG"> Togo </option>
+                                    <option value="TK"> Tokelau </option>
+                                    <option value="TO"> Tonga </option>
+                                    <option value="TT">
+                                        Trinidad and Tobago </option>
+                                    <option value="TN"> Tunisia </option>
+                                    <option value="TR"> Turkey </option>
+                                    <option value="TM">
+                                        Turkmenistan </option>
+                                    <option value="TC">
+                                        Turks and Caicos Islands </option>
+                                    <option value="TV"> Tuvalu </option>
+                                    <option value="UG"> Uganda </option>
+                                    <option value="UA"> Ukraine </option>
+                                    <option value="AE">
+                                        United Arab Emirates </option>
+                                    <option value="GB">
+                                        United Kingdom </option>
+                                    <option value="US">
+                                        United States of America </option>
+                                    <option value="UY"> Uruguay </option>
+                                    <option value="UZ"> Uzbekistan </option>
+                                    <option value="VU"> Vanuatu </option>
+                                    <option value="VE">
+                                        Venezuela (Bolivarian Republic of) </option>
+                                    <option value="VN"> Viet Nam </option>
+                                    <option value="YE"> Yemen </option>
+                                    <option value="ZM"> Zambia </option>
+                                    <option value="ZW">
+                                        Zimbabwe
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-checkbox row">
+                            <input type="checkbox" id="checkbox" name="checkbox" value="1" true-value="1"
+                                false-value="" />
+                            <label for="checkbox">
+                                I would like to stay informed about UNICEF’s
+                                work, including progress of this campaign,
+                                fundraising appeals and other ways I can
+                                support children.
+                            </label>
+                        </div>
+                        <button type="submit" class="btn-submit">
+                            SUBMIT
+                        </button>
+                    </form>
                 </div>
             </div>
-            <div class="video-section container-md">
+        </div>
+        <div class="video-section container-md">
+            <div class="section-title">
+                <h1>Go blue for every child</h1>
+            </div>
+            <div class="section-description">
+                <p>
+                    This World Children’s Day, Millie Bobby Brown is leading
+                    an all-star team on a special assignment: Go blue! NEWS:
+                    Millie Bobby Brown named UNICEF’s youngest-ever Goodwill
+                    Ambassador
+                </p>
+            </div>
+            <div class="video ">
+                <iframe width="100%" height="500px" src="https://www.youtube.com/embed/hGWE2D2Q81U" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="btn-wrapper">
+                <a class="btn-sign" href="#">SIGN THE PETITION</a>
+            </div>
+        </div>
+        <div class="facts-section container-md">
+            <div>
                 <div class="section-title">
-                    <h1>Go blue for every child</h1>
+                    <h1>
+                        Children have their rights denied every single day
+                    </h1>
+                </div>
+                <div class="imgs">
+                    <div class="col">
+                        <img class="ItemContent-image" src="//d3cdtxx03omvla.cloudfront.net/9360306_1541186656257.svg"
+                            alt="Image" style="opacity: 1; width: 19.03em; height: 20.97em" />
+                           <div class="text">
+                               <div class="container-sm">
+                                   <h3>262 million children and youth are out of school</h3>
+                               </div>
+                           </div>
+                    </div>
+                    <div class="col">
+ 
+                        <img class="ItemContent-image" src="//d3cdtxx03omvla.cloudfront.net/9360306_1541186663029.svg"
+                            alt="Image" style="opacity: 1; width: 19.03em; height: 20.97em" />
+                            <div class="text">
+                                    <div class="container-sm">
+                                        <h3>650 million girls and women were married before their 18th birthday</h3>
+                                    </div>
+                                </div>
+                    </div>
+                    <div class="col">
+
+                        <img class="ItemContent-image" src="//d3cdtxx03omvla.cloudfront.net/9360306_1541186667107.svg"
+                            alt="Image" style="opacity: 1;  width: 19.03em; height: 20.97em" />
+                            <div class="text">
+                                    <div class="container-sm">
+                                        <h3>5.4 million children died from mostly preventable causes before their fifth birthday</h3>
+                                    </div>
+                                </div>
+                    </div>
                 </div>
                 <div class="section-description">
                     <p>
-                        This World Children’s Day, Millie Bobby Brown is leading
-                        an all-star team on a special assignment: Go blue! NEWS:
-                        Millie Bobby Brown named UNICEF’s youngest-ever Goodwill
-                        Ambassador
+                        It’s time to put children back on the agenda. It’s
+                        time to put children first.
                     </p>
-                </div>
-                <div class="video">
-                    <iframe
-                        style="border:none;"
-                        width="100%"
-                        height="500px"
-                        src="https://www.youtube.com/embed/hGWE2D2Q81U"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen
-                    ></iframe>
                 </div>
                 <div class="btn-wrapper">
                     <a class="btn-sign" href="#">SIGN THE PETITION</a>
                 </div>
             </div>
-        </main>
-    </body>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+
 </html>
