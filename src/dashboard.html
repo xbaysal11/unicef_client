@@ -12,7 +12,7 @@
 
 <body>
     <div class="display-flex">
-        <div class="sidebar">
+        <div class="sidebar" id="sidebar">
             <div class="fixed">
 
                 <div class="sidebar-logo">
@@ -36,22 +36,22 @@
                         </div>
                     </div>
                 </div>
-                <div class="sidebar-menu">
+                <div id="menu" class="sidebar-menu">
                     <ul>
                         <li class="item active-item ">
-                            <a href="#" class="d-flex">
+                            <a href="dashboard.html" onclick="activateMenu();" class="d-flex">
                                 <i class="fas fa-columns"></i>
                                 <p>Dashboard</p>
                             </a>
                         </li>
                         <li class="item ">
-                            <a href="#" class="d-flex" id="item2">
+                            <a href="petitions.html" onclick="activateMenu();" class="d-flex" id="item2">
                                 <i class="fas fa-user"></i>
                                 <p>Petitions</p>
                             </a>
                         </li>
                         <li class="item ">
-                            <a href="#" class="d-flex">
+                            <a href="#" onclick="activateMenu();" class="d-flex">
                                 <i class="fas fa-ellipsis-h"></i>
                                 <p>Settings</p>
                             </a>
@@ -59,9 +59,9 @@
                     </ul>
                 </div>
                 <div class="sidebar-toggle">
-                    <a href="#">
-                        <i class="fas fa-toggle-off"> Toggle Sidebar / </i>
-                        <i class="fas fa-toggle-on"></i>
+                    <a href="#" onclick="toggleClass();">
+                        <i id="off" class="fas fa-toggle-off"></i>
+                        <p id="toggle-text"> Toogle Sidebar</p>
                     </a>
                 </div>
             </div>
@@ -97,49 +97,48 @@
                     <div class="today-date">
                         <h3 class="today-date-text">23 December, Sunday </h3>
                     </div>
-                    <div class="calendar">
+                    <div class="calendar" id="calendar">
                         <div class="calendar-col">
-                            <a href="#">
+                            <a href="#" onclick="activateDate();">
                                 <p class="date-name">Sun</p>
                                 <p class="date-number date-now">23</p>
                             </a>
                         </div>
                         <div class="calendar-col date-active">
-                            <a href="#">
+                            <a href="#" onclick="activateDate();">
 
                                 <p class="date-name">Mon</p>
                                 <p class="date-number">24</p>
                             </a>
                         </div>
                         <div class="calendar-col">
-                            <a href="#">
+                            <a href="#" onclick="activateDate();">
                                 <p class="date-name">Tue</p>
                                 <p class="date-number ">25</p>
                             </a>
                         </div>
                         <div class="calendar-col">
-                            <a href="#">
-
+                            <a href="#" onclick="activateDate();">
                                 <p class="date-name">Wed</p>
                                 <p class="date-number ">26</p>
                             </a>
                         </div>
                         <div class="calendar-col">
-                            <a href="#">
+                            <a href="#" onclick="activateDate();">
 
                                 <p class="date-name">Thu</p>
                                 <p class="date-number ">27</p>
                             </a>
                         </div>
                         <div class="calendar-col">
-                            <a href="#">
+                            <a href="#" onclick="activateDate();">
 
                                 <p class="date-name">Fri</p>
                                 <p class="date-number ">28</p>
                             </a>
                         </div>
                         <div class="calendar-col">
-                            <a href="#">
+                            <a href="#" onclick="activateDate();">
                                 <p class="date-name">Sat</p>
 
                                 <p class="date-number ">29</p>
@@ -206,13 +205,67 @@
                     </div>
                 </div>
                 <div class="right-content">
-                    <div class="graph"></div>
-                    <div class="chart"></div>
+                    <div class="graph">
+                        <div class="graph-title">
+                            <h3>Submissions</h3>
+                        </div>
+                    </div>
+                    <div class="chart">
+                        <div class="chart-title">
+                            <h3>Goal</h3>
+                            <div class="show-date">
+                                <label for="select-date">Show: </label>
+                                <select id="select-date" name="select-date" required="required" class="select-date">
+                                    <option value="week">This Week</option>
+                                    <option value="month">This Month</option>
+                                    <option value="year">This Year </option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <script>
 
+        function toggleClass() {
+            var sidebar = document.getElementById("sidebar");
+            var icon = document.getElementById("off");
+            var text = document.getElementById("toggle-text");
+            sidebar.classList.toggle("toggled");
+            icon.classList.toggle("fa-toggle-off");
+            icon.classList.toggle("fa-toggle-on");
+            if (text.innerHTML === " Toogle Sidebar") {
+                text.innerHTML = "";
+            } else {
+                text.innerHTML = " Toogle Sidebar";
+            }
+        }
+        function activateMenu() {
+            var btnContainer = document.getElementById("menu");
+            var btns = btnContainer.getElementsByClassName("item");
+            for (var i = 0; i < btns.length; i++) {
+                btns[i].addEventListener("click", function () {
+                    var current = document.getElementsByClassName("active-item");
+                    current[0].className = current[0].className.replace(" active-item", "");
+                    this.className += " active-item";
+                });
+            }
+        }
+        function activateDate() {
+            var btnContainer = document.getElementById("calendar");
+            var btns = btnContainer.getElementsByClassName("calendar-col");
+            for (var i = 0; i < btns.length; i++) {
+                btns[i].addEventListener("click", function () {
+                    var current = document.getElementsByClassName("date-active");
+                    current[0].className = current[0].className.replace(" date-active", "");
+                    this.className += " date-active";
+                });
+            }
+        }
+
+    </script>
 </body>
 
 </html>

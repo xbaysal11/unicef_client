@@ -1,2 +1,2 @@
 import "./scss/index.scss";
-import "./scss/admin.scss";
+import "./scss/dashboard.scss";

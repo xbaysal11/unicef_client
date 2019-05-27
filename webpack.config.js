@@ -68,8 +68,12 @@ module.exports = {
             filename: "./index.html"
         }),
         new HtmlWebPackPlugin({
-            template: "./src/admin.html",
-            filename: "./admin.html"
+            template: "./src/dashboard.html",
+            filename: "./dashboard.html"
+        }),
+        new HtmlWebPackPlugin({
+            template: "./src/petitions.html",
+            filename: "./petitions.html"
         }),
         new CleanWebpackPlugin()
     ]
