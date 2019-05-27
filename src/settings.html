@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Petitions | UNICEF</title>
+    <title>Settings | UNICEF</title>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 </head>
@@ -44,13 +44,13 @@
                                 <p>Dashboard</p>
                             </a>
                         </li>
-                        <li class="item active-item  ">
+                        <li class="item  ">
                             <a href="./petitions.html" onclick="activateMenu();" class="d-flex" id="item2">
                                 <i class="fas fa-user"></i>
                                 <p>Petitions</p>
                             </a>
                         </li>
-                        <li class="item ">
+                        <li class="item active-item ">
                             <a href="./settings.html" onclick="activateMenu();" class="d-flex">
                                 <i class="fas fa-ellipsis-h"></i>
                                 <p>Settings</p>
@@ -74,52 +74,45 @@
                     <button>Search!</button>
                 </form>
             </div>
-            <div class="show-list">
-                <label for="select-list">Show: </label>
-                <select id="select-list" name="select-list" required="required" class="select-list">
-                    <option value="week">This Week</option>
-                    <option value="month">This Month</option>
-                    <option value="year">This Year </option>
-                </select>
-            </div>
-            <div class="petitions-content">
-                <div class="submit-list">
-                    <table>
-                        <tr>
-                            <th><input type="checkbox" name="" id=""></th>
-                            <th>Name</th>
-                            <th>Email</th>
-                            <th>Country</th>
-                            <th>Recent activity</th>
-                        </tr>
-                        <tr>
-                            <td><input type="checkbox" name="" id=""></td>
-                            <td class="name-cell"><img src="./img/unicef-blue.png" alt="">
-                                <p> Jon Snow</p>
-                            </td>
-                            <td>jon.snow@gmail.com</td>
-                            <td>Kyrgyzstan</td>
-                            <td>2 minutes ago</td>
-                        </tr>
-                        <tr>
-                            <td><input type="checkbox" name="" id=""></td>
-                            <td class="name-cell"><img src="./img/unicef-blue.png" alt="">
-                                <p> Jon Snow</p>
-                            </td>
-                            <td>jon.snow@gmail.com</td>
-                            <td>Kyrgyzstan</td>
-                            <td>2 minutes ago</td>
-                        </tr>
-                        <tr>
-                            <td><input type="checkbox" name="" id=""></td>
-                            <td class="name-cell"><img src="./img/unicef-blue.png" alt="">
-                                <p> Jon Snow</p>
-                            </td>
-                            <td>jon.snow@gmail.com</td>
-                            <td>Kyrgyzstan</td>
-                            <td>2 minutes ago</td>
-                        </tr>
-                    </table>
+
+            <div class="settings-content">
+                <div class="settings-field">
+                    <form class="settings-form">
+                        <div class="row-settings">
+                            <label for="name">FULL NAME</label>
+                            <input class="input" type="text" id="name" name="name" required="required" />
+                        </div>
+                        <div class="row-settings">
+                            <label for="email">EMAIL</label>
+                            <input class="input" type="email" id="email" name="email" required="required" />
+                        </div>
+                        <div class="row-settings row-settings-flex">
+                            <div class="row-settings-inner">
+                                <label for="current-password">CURRENT PASSWORD</label>
+                                <input class="input" type="password" id="current-password" name="current-password"
+                                    required="required" />
+                            </div>
+                            <div class="row-settings-inner">
+                                <label for="new-password">NEW PASSWORD</label>
+                                <input class="input" type="password" id="new-password" name="new-password"
+                                    required="required" />
+                            </div>
+                            <div class="row-settings-inner">
+                                <label for="confirm-password">CONFIRM PASSWORD</label>
+                                <input class="input" type="password" id="confirm-password" name="confirm-password"
+                                    required="required" />
+                            </div>
+                        </div>
+                        <div class="row-settings">
+                            <a href="#" class="upload-box">
+                                <i class="fas fa-plus"></i>
+                                <p>UPLOAD</p>
+                            </a>
+                        </div>
+                        <div class="row-settings settings-save-btn">
+                            <button>Save</button>
+                        </div>
+                    </form>
                 </div>
 
             </div>

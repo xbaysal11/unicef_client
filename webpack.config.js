@@ -75,6 +75,10 @@ module.exports = {
             template: "./src/petitions.html",
             filename: "./petitions.html"
         }),
+        new HtmlWebPackPlugin({
+            template: "./src/settings.html",
+            filename: "./settings.html"
+        }),
         new CleanWebpackPlugin()
     ]
 };
