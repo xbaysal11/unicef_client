@@ -67,6 +67,10 @@ module.exports = {
             template: "./src/index.html",
             filename: "./index.html"
         }),
+        new HtmlWebPackPlugin({
+            template: "./src/admin.html",
+            filename: "./admin.html"
+        }),
         new CleanWebpackPlugin()
     ]
 };
