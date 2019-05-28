@@ -1,0 +1,438 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+$blue: #1cabe2;
+$blue-light: #59bae0;
+$bg-gray: #f1f1f1;
+$font: #303030;
+$white: #fff;
+
+%btn {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  padding: 0.7em 0;
+
+  padding-left: 16em;
+  padding-right: 16em;
+  font-size: 0.88em;
+  background: $blue;
+  color: $white;
+  &:hover {
+    background: $blue-light;
+  }
+}
+
+.container-sm {
+  padding: 0 2em;
+}
+
+.container-md {
+  padding: 0 15.5em;
+}
+
+.justify-left {
+  justify-self: start;
+}
+
+.justify-right {
+  justify-self: end;
+  margin-top: 0.7em;
+}
+
+.section-title {
+  text-align: center;
+  padding: 2em 0 1em 0;
+}
+
+.section-description {
+  text-align: center;
+  margin-bottom: 2em;
+  border-bottom: 2px solid $blue;
+  padding: 1em 1.5em;
+}
+
+.btn-wrapper {
+  margin: 2em auto 4em 0;
+  text-align: center;
+  width: 100%;
+  .btn-sign {
+    @extend %btn;
+    margin: 3em 0 3em 0;
+    padding-left: 30%;
+    padding-right: 30%;
+    border-radius: 0.7em;
+  }
+}
+
+.btn {
+  @extend %btn;
+  border-radius: 6px;
+  border: 3px solid $white;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+a {
+  color: $white;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: $font;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 7.5em;
+  width: 100%;
+  background: $blue;
+  display: grid;
+  color: $white;
+  .header-1 {
+    justify-self: end;
+    padding-top: 0.5em;
+    .active {
+      border-top: 4px solid $white;
+    }
+    .margin-around {
+      margin: 0 1.7em;
+    }
+    a {
+      padding-top: 0.6em;
+      font-size: 0.75em;
+    }
+  }
+  .header-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .brand {
+      font-size: 2.5em;
+      display: flex;
+      p {
+        font-weight: bolder;
+        margin: 0;
+      }
+      #slogan {
+        font-weight: 500;
+        margin: 0 0.5em;
+        position: relative;
+        &::before {
+          content: " ";
+          position: absolute;
+          height: 1.3em;
+          width: 0.03em;
+          background: $white;
+          top: -0.1em;
+          left: -0.25em;
+        }
+      }
+      img {
+        width: 1em;
+        height: 1em;
+        margin: 0.1em;
+      }
+    }
+  }
+}
+
+main {
+  .banner {
+    position: relative;
+    padding-bottom: 7.1em;
+    img {
+      width: 100%;
+      height: auto;
+    }
+    .title {
+      box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.25);
+      position: absolute;
+      z-index: 2;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background: $white;
+      display: grid;
+      align-items: center;
+      width: 85%;
+      margin: 0 auto 2.5em auto;
+      padding: 1.3em;
+      border-radius: 1em;
+      text-align: center;
+      .main-title {
+        font-weight: 700;
+        font-size: 2.625em;
+        margin-bottom: 0.5em;
+      }
+      .secondary-title {
+        font-style: italic;
+        font-size: 1.25em;
+      }
+    }
+  }
+  .description {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 4.5em;
+    text-align: center;
+    font-size: 1.25em;
+  }
+  .petition-outer {
+    background: $bg-gray;
+    width: 100%;
+    border-top: 1px solid #9e9e9e;
+    border-bottom: 1px solid #9e9e9e;
+    margin: 0 auto;
+    .petition-inner {
+      padding: 0 5em;
+      box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.25);
+      margin: 5em auto;
+      background: $white;
+      width: 450px;
+      border-radius: 0.5em;
+      text-align: center;
+      .petition-title {
+        border-bottom: 2px solid $blue;
+        padding: 1.8em 0 1.5em;
+      }
+      .p0 {
+        padding: 0;
+        margin: 0 !important;
+      }
+      .graph {
+        margin: 3em 0;
+        text-align: left;
+        p {
+          margin: 10px 0;
+          padding: 0;
+        }
+        #submitted {
+          font-weight: bold;
+        }
+        .progress-bar-container {
+          border-radius: 1em;
+          width: 100%;
+          background-color: #ddd;
+          .progress-bar {
+            border-radius: 1em;
+            width: 80%;
+            background: $blue;
+            padding: 5px;
+          }
+        }
+      }
+      .back {
+        padding: 1em 0;
+      }
+      .share-row {
+        display: flex;
+        justify-content: space-around;
+        padding: 1em 0;
+      }
+      .form {
+        text-align: left;
+        .row {
+          display: flex;
+          margin: 2em 0;
+          width: 100%;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+          .col {
+            width: 100%;
+            padding-right: 0;
+            padding: 0 1em;
+
+            .btn-submit {
+              @extend %btn;
+            }
+            img {
+              width: 100%;
+              height: 100%;
+
+              padding-right: 2em;
+            }
+            label {
+              display: block;
+            }
+            .input {
+              color: #2159a8;
+              font-size: 16px;
+              padding: 7px 10px;
+              width: 100%;
+            }
+            .select {
+              color: #2159a8;
+              font-size: 16px;
+              padding: 7px 10px;
+              width: 105%;
+              background: #fff;
+            }
+          }
+        }
+        .form-checkbox {
+          display: flex;
+          label {
+            margin: 0 1em;
+          }
+          input {
+            background: #fff;
+          }
+        }
+      }
+    }
+  }
+  .video-section {
+    padding: 3em auto;
+    height: 100%;
+  }
+  .facts-section {
+    height: 100%;
+    background: $bg-gray;
+    .section-description {
+      border: none;
+    }
+    .imgs {
+      display: flex;
+      justify-content: space-around;
+      .col {
+        position: relative;
+        .text {
+          text-align: center;
+          width: 100%;
+          position: absolute;
+          top: 0;
+          margin-top: 11em;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  height: 100%;
+  background: $blue;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  // grid-gap: 1em 1em;
+  .col {
+    padding: 1em;
+    margin: 1em;
+    .footer-title {
+      color: $white;
+      font-weight: bold;
+      margin-bottom: 1.5em;
+    }
+    .footer-content {
+      ul {
+        list-style: none;
+        padding: 0;
+        li {
+          font-size: 0.8em;
+          margin-bottom: 0.6em;
+        }
+      }
+    }
+  }
+  .item-1 {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .item-2 {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+
+  .item-3 {
+    grid-area: 1 / 3 / 2 / 4;
+  }
+
+  .item-4 {
+    grid-area: 1 / 4 / 2 / 5;
+  }
+  .special-block {
+    text-align: right;
+    .button-block {
+      // margin: 1em 0;
+      .btn {
+        color: red;
+        background: $white;
+        font-weight: normal;
+      }
+    }
+    .social-block {
+      margin: 2em 0;
+      ul {
+        li {
+          display: inline-block;
+          i {
+            font-size: 1.3em;
+            margin: 0 0.6em;
+          }
+        }
+      }
+    }
+    .social-follow {
+      ul {
+        li {
+          position: relative;
+          display: inline-block;
+          font-size: 0.8em;
+          a {
+            margin: 0 1em;
+          }
+          #before-line {
+            &::before {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 1px;
+              height: 12px;
+              background: $white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .container-md {
+    padding: 0 3em;
+  }
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    font-size: 1rem;
+    // grid-gap: 1em 1em;
+    .special-block {
+      // display: block;
+      // width: 100%;
+      text-align: center;
+    }
+
+    .item-1 {
+      grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .item-2 {
+      grid-area: 1 / 2 / 2 / 3;
+    }
+
+    .item-3 {
+      grid-area: 1 / 3 / 2 / 4;
+    }
+
+    .item-4 {
+      grid-area: 2 / 1 / 3 / 4;
+    }
+  }
+}

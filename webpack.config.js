@@ -68,6 +68,10 @@ module.exports = {
             filename: "./index.html"
         }),
         new HtmlWebPackPlugin({
+            template: "./src/index2.html",
+            filename: "./index2.html"
+        }),
+        new HtmlWebPackPlugin({
             template: "./src/dashboard.html",
             filename: "./dashboard.html"
         }),
